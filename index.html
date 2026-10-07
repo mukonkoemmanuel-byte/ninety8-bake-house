@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- ^ Tells the browser: "this is a modern HTML page". Always the first line. -->
+
+<!-- <html> wraps EVERYTHING. lang="en" tells screen readers and Google the page is in English. -->
+<html lang="en">
+
+<!-- <head> = information ABOUT the page. Nothing in here shows on the page itself. -->
+<head>
+  <!-- Lets the page show any character: K, é, emojis. -->
+  <meta charset="UTF-8">
+  <!-- Makes the page fit phone screens instead of showing a tiny desktop page. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The text on the browser tab, and the blue link text on Google. -->
+  <title>Ninety8 Bake House Bakery | Cakes and treats in Lusaka</title>
+  <!-- The grey text under the link on Google. -->
+  <meta name="description" content="Birthday cakes, cupcakes and cookies, baked by hand in Lusaka.">
+</head>
+
+<!-- <body> = everything the visitor actually sees. -->
+<body>
+
+  <!-- <header> = the strip at the top: logo and menu. It repeats on every page. -->
+  <header>
+    <a href="index.html">Ninety8 Bake House</a>
+    <!-- <nav> = a group of links that move you around the site. -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="prices.html">Prices</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <!-- <main> = the content that is unique to THIS page. Only one per page. -->
+  <main>
+
+    <!-- <section> = a chunk of the page about one topic. -->
+    <section>
+      <!-- <h1> = the main heading. ONE per page. Google reads it to know what the page is about. -->
+      <h1>Cakes baked fresh, for the days that matter</h1>
+      <!-- <p> = a paragraph. -->
+      <p>Birthday cakes, cupcakes and cookies, made by hand in Lusaka.</p>
+      <!-- <a> = a link. href = where it goes. -->
+      <a href="prices.html">See our prices</a>
+    </section>
+
+    <section>
+      <!-- <h2> = a sub-heading. Headings go in order: h1, then h2, then h3. Never skip. -->
+      <h2>What we bake is that below</h2>
+
+      <!-- <div> = a box with no meaning of its own. We use it to group things for styling later. -->
+      <div>
+        <!-- <article> = a self-contained item. Here: one product. -->
+        <article>
+          <!-- <img> has no closing tag. src = the file. alt = what the picture shows,
+               read aloud to blind visitors and shown if the image fails to load. Never leave it empty. -->
+          <img src="images/cake.jpg" alt="A two-layer birthday cake with white icing" width="400">
+          <h3>Celebration cakes</h3>
+          <p>Birthdays, anniversaries, graduations. Pick your flavour and we write the message.</p>
+        </article>
+
+        <article>
+          <img src="images/cupcakes.jpg" alt="A box of cupcakes with swirled icing" width="400">
+          <h3>Cupcakes</h3>
+          <p>Boxes of 6 or 12. Great for the office, school days and kitchen parties.</p>
+        </article>
+
+        <article>
+          <img src="images/cookies.jpg" alt="A plate of golden chocolate chip cookies" width="400">
+          <h3>Cookies</h3>
+          <p>Soft in the middle, crisp on the edges. Sold by the dozen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>About us</h2>
+      <p>
+        Ninety8 Bake House started in a home kitchen with one oven and a lot of birthday requests.
+        Everything is baked to order, so your cake is made for you, not pulled off a shelf.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- <footer> = the strip at the bottom. Also repeats on every page. -->
+  <footer>
+    <!-- &copy; is a "character code". It shows as the © symbol. -->
+    <!-- <span> = like a <div> but it sits INSIDE a line of text. We will use this one in Stage 5. -->
+    <p>&copy; <span id="year">2026</span> Ninety8 Bake House Bakery</p>
+    <!-- wa.me links open a WhatsApp chat with that number. Number = country code, no + and no spaces. -->
+    <p>WhatsApp: <a href="https://wa.me/260964182847">+260 97 748 7881</a></p>
+  </footer>
+
+</body>
+</html>
