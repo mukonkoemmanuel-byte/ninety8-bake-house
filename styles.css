@@ -136,31 +136,63 @@ nav a.active {
 /* TODO 4a: .cards  (the box that holds the 3 products, or the 2 packages)
    On phones: one card per row.
    Hints: display: grid;  grid-template-columns: 1fr;  gap: 20px;  */
-  
-.
+   .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+   }
+
 
 /* TODO 4b: .card
    A white box with a thin border and rounded corners.
    Hints: background, border: 1px solid var(--line), border-radius: 12px,
           overflow: hidden (so the image does not poke out of the round corners). */
 
+.card {
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 12px;
+   overflow: hidden;
+
+}
 
 /* TODO 4c: .card img
    Make all 3 photos the same height without squashing them.
    Hints: width: 100%;  height: 200px;  object-fit: cover;
    Try object-fit: fill  to see why "cover" is better. */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+   border-radius: 12px;
+}
 
 
 /* TODO 4d: .card h3, .card p
    The text is touching the card edges. Give it padding on the left and right. */
+   .card h3 {
+      padding: 20px 50px;
+
+   }
+   .card p {
+      padding: 20px;
+   }
 
 
 /* TODO 4e: .featured  (the package we want people to pick)
    Make it stand out: a thicker pink border. */
-
+   .featured {
+      border: solid pink;
+   }
 
 /* TODO 4f: .price  (the big price on a package card)
    Big, bold, pink. */
+   .price {
+      fontsize: 24px;
+      font-weight: bold;
+      color: var(--pink);
+   }
+   
 
 
 /* ============ 5. Price table (TODO) ============ */
@@ -194,4 +226,4 @@ nav a.active {
 
 @media (min-width: 700px) {
 
-}
+
