@@ -21,13 +21,13 @@
 <body>
 
   <!-- <header> = the strip at the top: logo and menu. It repeats on every page. -->
-  <header>
-    <a href="index.html">Ninety8 Bake House</a>
+  <header class="site-header">
+    <a href="index.html" class="logo">Ninety8 Bake House</a>
     <!-- <nav> = a group of links that move you around the site. -->
     <nav>
-      <a href="index.html">Home</a>
-      <a href="prices.html">Prices</a>
-      <a href="terms.html">Terms</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="prices.html" class="active">Prices</a>
+      <a href="terms.html" class="active">Terms</a>
     </nav>
   </header>
 
@@ -35,45 +35,45 @@
   <main>
 
     <!-- <section> = a chunk of the page about one topic. -->
-    <section>
+    <section class="hero">
       <!-- <h1> = the main heading. ONE per page. Google reads it to know what the page is about. -->
       <h1>Cakes baked fresh, for the days that matter</h1>
       <!-- <p> = a paragraph. -->
       <p>Birthday cakes, cupcakes and cookies, made by hand in Chingola.</p>
       <!-- <a> = a link. href = where it goes. -->
-      <a href="prices.html">See our prices</a>
+      <a href="prices.html" class="button">See our prices</a>
     </section>
 
-    <section>
+    <section class="section">
       <!-- <h2> = a sub-heading. Headings go in order: h1, then h2, then h3. Never skip. -->
       <h2>What we bake is that below</h2>
 
       <!-- <div> = a box with no meaning of its own. We use it to group things for styling later. -->
-      <div>
+      <div class="cards">
         <!-- <article> = a self-contained item. Here: one product. -->
-        <article>
+        <article class="card">
           <!-- <img> has no closing tag. src = the file. alt = what the picture shows,
                read aloud to blind visitors and shown if the image fails to load. Never leave it empty. -->
-          <img src="images/cake.jpg" alt="A two-layer birthday cake with white icing" width="400">
+          <img src="images/cake.jpg" alt="A two-layer birthday cake with white icing">
           <h3>Celebration cakes</h3>
           <p>Birthdays, anniversaries, graduations. Pick your flavour and we write the message.</p>
         </article>
 
-        <article>
-          <img src="images/cupcakes.jpg" alt="A box of cupcakes with swirled icing" width="400">
+        <article class="card">
+          <img src="images/cupcakes.jpg" alt="A box of cupcakes with swirled icing">
           <h3>Cupcakes</h3>
           <p>Boxes of 6 or 12. Great for the office, school days and kitchen parties.</p>
         </article>
 
-        <article>
-          <img src="images/cookies.jpg" alt="A plate of golden chocolate chip cookies" width="400">
+        <article class="card">
+          <img src="images/cookies.jpg" alt="A plate of golden chocolate chip cookies">
           <h3>Cookies</h3>
           <p>Soft in the middle, crisp on the edges. Sold by the dozen.</p>
         </article>
       </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2>About us</h2>
       <p>
         Ninety8 Bake House started in a home kitchen with one oven and a lot of birthday requests.
@@ -84,7 +84,7 @@
   </main>
 
   <!-- <footer> = the strip at the bottom. Also repeats on every page. -->
-  <footer>
+  <footer class="site-footer">
     <!-- &copy; is a "character code". It shows as the © symbol. -->
     <!-- <span> = like a <div> but it sits INSIDE a line of text. We will use this one in Stage 5. -->
     <p>&copy; <span id="year">2026</span> Ninety8 Bake House Bakery</p>

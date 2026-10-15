@@ -9,24 +9,24 @@
 </head>
 <body>
 
-  <header>
-    <a href="index.html">Ninety8 Bake House</a>
+  <header class="site-header">
+    <a href="index.html" class="logo">Ninety8 Bake House</a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="prices.html">Prices</a>
-      <a href="terms.html">Terms</a>
+      <a href="index.html" class="active" >Home</a>
+      <a href="prices.html" class="active" >Prices</a>
+      <a href="terms.html" class="active" >Terms</a>
     </nav>
   </header>
 
   <main>
-    <section>
+    <section class="hero">
       <h1>Prices</h1>
       <p>All prices are in Zambian Kwacha (K). Custom designs are quoted on WhatsApp.</p>
 
       <!-- A <table> is for data that has rows and columns, like a price list.
            <thead> = the heading row.  <tbody> = the data rows.
            <tr> = table row.  <th> = heading cell.  <td> = normal cell. -->
-      <table>
+      <table class="price-table" >
         <thead>
           <tr>
             <th>Item</th>
@@ -60,12 +60,14 @@
       </table>
     </section>
 
-    <section>
+    <section  class="section">
       <h2>Packages</h2>
-
-      <article>
+      
+      <div class="cards"> 
+      
+        <article class="card package" >
         <h3>Birthday Bundle</h3>
-        <p>K800</p>
+        <p   class="price">K800</p>
         <!-- <ul> = a bulleted list ("unordered"). Each bullet is an <li> (list item). -->
         <ul>
           <li>Small celebration cake</li>
@@ -73,9 +75,9 @@
           <li>Your message on the cake</li>
         </ul>
       </article>
-      <article>
+      <article class="card packag" class="card package featured">
         <h3>Party pack</h3>
-        <p> K1,250</p>
+        <p   class="price"> K1,250</p>
         <ul>
           <li>large celebration cacke</li>
           <li>24 cupcackes</li>
@@ -83,9 +85,10 @@
           <li>free delivery in Chingola</li>
         </ul>
       </article>
+      </div>
     </section>
   </main>
-<footer>
+<footer class="site-footer">
    <p>&copy; <span id="year">2026</span> Ninety8 Bake House Bakery</p>
     <p>WhatsApp: <a href="https://wa.me/260964182847">+260 97 748 7881</a></p>
 </footer>
