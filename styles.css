@@ -90,11 +90,23 @@ nav a.active {
 /* TODO 3a: .section
    Keep content from stretching too wide on big screens, and centre it.
    Hints: max-width: 960px;  margin: 0 auto;  padding: 40px 20px;  */
+   .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      
+   }
 
 
 /* TODO 3b: .hero  (the big welcome block on the home page)
    Centre the text, give it lots of space (padding), and a soft background.
    Hint for a fade:  background: linear-gradient(180deg, #fde3d9, var(--cream)); */
+   .hero {
+      text-align: center;
+      padding: 20px 10px;
+      background: linear-gradient(180deg, #fde3d9, var(--cream));
+
+   }
 
 
 /* TODO 3c: .button  (makes a link look like a button)
@@ -102,6 +114,21 @@ nav a.active {
           color: white;  border-radius: 999px (fully round ends);
           text-decoration: none (removes the underline).
    Then add .button:hover with a darker background. */
+   .button {
+      display: inline-block ;
+      padding: 10px;
+      background: var(--pink);
+      color: white;
+      border-radius: 999px ;
+      text-decoration: none;
+   }
+   
+   .button:hover {
+      background: #444 ;
+      color: white;
+      transition: 3s;
+   }
+   
 
 
 /* ============ 4. Cards (TODO) ============ */
@@ -109,7 +136,8 @@ nav a.active {
 /* TODO 4a: .cards  (the box that holds the 3 products, or the 2 packages)
    On phones: one card per row.
    Hints: display: grid;  grid-template-columns: 1fr;  gap: 20px;  */
-
+  
+.
 
 /* TODO 4b: .card
    A white box with a thin border and rounded corners.
