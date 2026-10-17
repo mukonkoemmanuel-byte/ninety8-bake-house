@@ -124,7 +124,7 @@ nav a.active {
    }
    
    .button:hover {
-      background: #444 ;
+      background: brown ;
       color: white;
       transition: 3s;
    }
@@ -138,7 +138,7 @@ nav a.active {
    Hints: display: grid;  grid-template-columns: 1fr;  gap: 20px;  */
    .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns:1fr;
       gap: 20px;
    }
 
@@ -202,6 +202,37 @@ nav a.active {
    Then style .price-table th and .price-table td:
      some padding, text-align: left, a line under each row (border-bottom).
    Make the heading row dark (background: var(--brown)) with white text. */
+   .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+     
+   }
+
+   .price-table th {
+      padding: 12px;
+      color: white;
+      text-align: left;
+      background-color: #f28b9b ;
+      border-bottom:5px pink;
+   }
+
+   .price-table td {
+      padding: 10px; 
+      text-align: left;
+      color: #4a2c2a;
+      border-bottom:5px solid #ecdccb;
+   }
+
+   .price-table tr:nth-child(even) td {
+      background-color: #f8e6df;
+   }
+
+   .price-table tr:nth-child td {
+      border-bottom: none;
+   }
 
 
 /* ============ 6. (Stage 5 will go here) ============ */
@@ -212,7 +243,11 @@ nav a.active {
 /* TODO 7: .site-footer
    Dark background, light text, centred, some padding.
    Footer links are now hard to read: fix .site-footer a too. */
-
+   .site-footer {
+      background:  #ecdccb ;
+      text-align: center;
+      padding: 12px;
+   }
 
 /* ============ 8. Bigger screens (TODO) ============ */
 /* We built everything for PHONES first ("mobile first").
@@ -225,5 +260,10 @@ nav a.active {
    and drag the width smaller and bigger. Watch the cards jump. */
 
 @media (min-width: 700px) {
+   .cards{
+ grid-template-columns: repeat(3, 1fr) ;
+   }
+}
+
 
 
