@@ -1,0 +1,269 @@
+/* ==========================================================
+   Sweet Crumbs styles
+   How CSS works:   selector { property: value; }
+     body         -> every <body> tag
+     .card        -> every tag with class="card"
+     nav a        -> every <a> that is INSIDE a <nav>
+     nav a:hover  -> that <a>, but only while the mouse is over it
+   ========================================================== */
+
+
+/* ============ 1. Colours and fonts (DONE, read it) ============ */
+/* These are VARIABLES. Change a colour here once, it changes everywhere.
+   Use one like this:  color: var(--brown);
+   Pick colours that match her brand. Try https://coolors.co for ideas. */
+:root {
+  --cream: #fff8f0;
+  --brown: #4a2c2a;
+  --pink: #e07a7a;
+  --pink-dark: #c25b5b;
+  --line: #ecdccb;
+  --white: #ffffff;
+}
+
+/* Makes width and padding behave the way you expect. Just keep it. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--cream);
+  color: var(--brown);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--pink-dark);
+}
+
+/* Images never get wider than the box they are in. Important on phones. */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* ============ 2. Header and navigation (DONE, read it) ============ */
+/* display: flex puts the children (logo and nav) side by side.
+   justify-content: space-between pushes them to opposite ends.
+   flex-wrap: wrap lets them go onto two lines on a small phone. */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+/* .active is the page you are on right now. */
+nav a:hover,
+nav a.active {
+  color: var(--pink-dark);
+  border-bottom: 2px solid var(--pink);
+}
+
+
+/* ============ 3. Sections, hero and button (TODO) ============ */
+
+/* TODO 3a: .section
+   Keep content from stretching too wide on big screens, and centre it.
+   Hints: max-width: 960px;  margin: 0 auto;  padding: 40px 20px;  */
+   .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      
+   }
+
+
+/* TODO 3b: .hero  (the big welcome block on the home page)
+   Centre the text, give it lots of space (padding), and a soft background.
+   Hint for a fade:  background: linear-gradient(180deg, #fde3d9, var(--cream)); */
+   .hero {
+      text-align: center;
+      padding: 20px 10px;
+      background: linear-gradient(180deg, #fde3d9, var(--cream));
+
+   }
+
+
+/* TODO 3c: .button  (makes a link look like a button)
+   Hints: display: inline-block;  padding;  background: var(--pink);
+          color: white;  border-radius: 999px (fully round ends);
+          text-decoration: none (removes the underline).
+   Then add .button:hover with a darker background. */
+   .button {
+      display: inline-block ;
+      padding: 10px;
+      background: var(--pink);
+      color: white;
+      border-radius: 999px ;
+      text-decoration: none;
+   }
+   
+   .button:hover {
+      background: brown ;
+      color: white;
+      transition: 3s;
+   }
+   
+
+
+/* ============ 4. Cards (TODO) ============ */
+
+/* TODO 4a: .cards  (the box that holds the 3 products, or the 2 packages)
+   On phones: one card per row.
+   Hints: display: grid;  grid-template-columns: 1fr;  gap: 20px;  */
+   .cards {
+      display: grid;
+      grid-template-columns:1fr;
+      gap: 20px;
+   }
+
+
+/* TODO 4b: .card
+   A white box with a thin border and rounded corners.
+   Hints: background, border: 1px solid var(--line), border-radius: 12px,
+          overflow: hidden (so the image does not poke out of the round corners). */
+
+.card {
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 12px;
+   overflow: hidden;
+
+}
+
+/* TODO 4c: .card img
+   Make all 3 photos the same height without squashing them.
+   Hints: width: 100%;  height: 200px;  object-fit: cover;
+   Try object-fit: fill  to see why "cover" is better. */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+   border-radius: 12px;
+}
+
+
+/* TODO 4d: .card h3, .card p
+   The text is touching the card edges. Give it padding on the left and right. */
+   .card h3 {
+      padding: 20px 50px;
+
+   }
+   .card p {
+      padding: 20px;
+   }
+
+
+/* TODO 4e: .featured  (the package we want people to pick)
+   Make it stand out: a thicker pink border. */
+   .featured {
+      border: solid pink;
+   }
+
+/* TODO 4f: .price  (the big price on a package card)
+   Big, bold, pink. */
+   .price {
+      fontsize: 24px;
+      font-weight: bold;
+      color: var(--pink);
+   }
+   
+
+
+/* ============ 5. Price table (TODO) ============ */
+
+/* TODO 5: .price-table
+   Hints: width: 100%;  border-collapse: collapse;  (look up what this does)
+   Then style .price-table th and .price-table td:
+     some padding, text-align: left, a line under each row (border-bottom).
+   Make the heading row dark (background: var(--brown)) with white text. */
+   .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+     
+   }
+
+   .price-table th {
+      padding: 12px;
+      color: white;
+      text-align: left;
+      background-color: #f28b9b ;
+      border-bottom:5px pink;
+   }
+
+   .price-table td {
+      padding: 10px; 
+      text-align: left;
+      color: #4a2c2a;
+      border-bottom:5px solid #ecdccb;
+   }
+
+   .price-table tr:nth-child(even) td {
+      background-color: #f8e6df;
+   }
+
+   .price-table tr:nth-child td {
+      border-bottom: none;
+   }
+
+
+/* ============ 6. (Stage 5 will go here) ============ */
+
+
+/* ============ 7. Footer (TODO) ============ */
+
+/* TODO 7: .site-footer
+   Dark background, light text, centred, some padding.
+   Footer links are now hard to read: fix .site-footer a too. */
+   .site-footer {
+      background:  #ecdccb ;
+      text-align: center;
+      padding: 12px;
+   }
+
+/* ============ 8. Bigger screens (TODO) ============ */
+/* We built everything for PHONES first ("mobile first").
+   A media query is CSS that only applies when a condition is true.
+   This one: only when the screen is at least 700px wide.
+
+   TODO 8: inside the media query below, make .cards show 3 columns
+   Hint: grid-template-columns: repeat(3, 1fr);
+   Test it: press F12, then click the phone/tablet icon at the top of DevTools,
+   and drag the width smaller and bigger. Watch the cards jump. */
+
+@media (min-width: 700px) {
+   .cards{
+ grid-template-columns: repeat(3, 1fr) ;
+   }
+}
+
+
+
