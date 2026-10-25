@@ -118,15 +118,15 @@ nav a.active {
       display: inline-block ;
       padding: 10px;
       background: var(--pink);
-      color: white;
+      color:#ffffff;
       border-radius: 999px ;
       text-decoration: none;
+      transition: 0.2s;
    }
    
    .button:hover {
-      background: brown ;
-      color: white;
-      transition: 3s;
+      background: #c25b5b;
+      color: #ffffff;     
    }
    
 
@@ -149,7 +149,7 @@ nav a.active {
           overflow: hidden (so the image does not poke out of the round corners). */
 
 .card {
-   background: white;
+   background:  #ffffff;
    border: 1px solid var(--line);
    border-radius: 12px;
    overflow: hidden;
@@ -171,7 +171,7 @@ nav a.active {
 /* TODO 4d: .card h3, .card p
    The text is touching the card edges. Give it padding on the left and right. */
    .card h3 {
-      padding: 20px 50px;
+      padding: 20px;
 
    }
    .card p {
@@ -188,7 +188,7 @@ nav a.active {
 /* TODO 4f: .price  (the big price on a package card)
    Big, bold, pink. */
    .price {
-      fontsize: 24px;
+      font-size: 24px;
       font-weight: bold;
       color: var(--pink);
    }
@@ -207,30 +207,29 @@ nav a.active {
       border-collapse: collapse;
       border-radius: 12px;
       overflow: hidden;
-      background: white;
+      background:  #ffffff;
      
    }
 
    .price-table th {
       padding: 12px;
-      color: white;
+      color:  #ffffff;
       text-align: left;
       background-color: #f28b9b ;
-      border-bottom:5px pink;
    }
 
    .price-table td {
       padding: 10px; 
       text-align: left;
       color: #4a2c2a;
-      border-bottom:5px solid #ecdccb;
+      border-bottom: 5px solid #ecdccb ;
    }
 
    .price-table tr:nth-child(even) td {
       background-color: #f8e6df;
    }
 
-   .price-table tr:nth-child td {
+   .price-table tr:last-child td {
       border-bottom: none;
    }
 
@@ -249,6 +248,7 @@ nav a.active {
       padding: 12px;
    }
 
+  
 /* ============ 8. Bigger screens (TODO) ============ */
 /* We built everything for PHONES first ("mobile first").
    A media query is CSS that only applies when a condition is true.
