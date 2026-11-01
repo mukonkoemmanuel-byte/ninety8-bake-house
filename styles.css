@@ -1,5 +1,5 @@
 /* ==========================================================
-   Sweet Crumbs styles
+   Ninety8 Bake House styles
    How CSS works:   selector { property: value; }
      body         -> every <body> tag
      .card        -> every tag with class="card"
@@ -19,6 +19,8 @@
   --pink-dark: #c25b5b;
   --line: #ecdccb;
   --white: #ffffff;
+  --pink-light: #f28b9b;
+  --blush: #f8e6df;
 }
 
 /* Makes width and padding behave the way you expect. Just keep it. */
@@ -118,15 +120,15 @@ nav a.active {
       display: inline-block ;
       padding: 10px;
       background: var(--pink);
-      color:#ffffff;
+      color: var(--white);
       border-radius: 999px ;
       text-decoration: none;
       transition: 0.2s;
    }
    
    .button:hover {
-      background: #c25b5b;
-      color: #ffffff;     
+      background: var(--pink-dark);
+      color: var(--white);
    }
    
 
@@ -149,7 +151,7 @@ nav a.active {
           overflow: hidden (so the image does not poke out of the round corners). */
 
 .card {
-   background:  #ffffff;
+   background: var(--white);
    border: 1px solid var(--line);
    border-radius: 12px;
    overflow: hidden;
@@ -182,7 +184,7 @@ nav a.active {
 /* TODO 4e: .featured  (the package we want people to pick)
    Make it stand out: a thicker pink border. */
    .featured {
-      border: solid pink;
+      border: 3px solid var(--pink);
    }
 
 /* TODO 4f: .price  (the big price on a package card)
@@ -207,26 +209,26 @@ nav a.active {
       border-collapse: collapse;
       border-radius: 12px;
       overflow: hidden;
-      background:  #ffffff;
+      background: var(--white);
      
    }
 
    .price-table th {
       padding: 12px;
-      color:  #ffffff;
+      color: var(--white);
       text-align: left;
-      background-color: #f28b9b ;
+      background-color: var(--pink-light);
    }
 
    .price-table td {
       padding: 10px; 
       text-align: left;
-      color: #4a2c2a;
-      border-bottom: 5px solid #ecdccb ;
+      color: var(--brown);
+      border-bottom: 5px solid var(--line);
    }
 
    .price-table tr:nth-child(even) td {
-      background-color: #f8e6df;
+      background-color: var(--blush);
    }
 
    .price-table tr:last-child td {
@@ -243,7 +245,7 @@ nav a.active {
    Dark background, light text, centred, some padding.
    Footer links are now hard to read: fix .site-footer a too. */
    .site-footer {
-      background:  #ecdccb ;
+      background: var(--line);
       text-align: center;
       padding: 12px;
    }
