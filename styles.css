@@ -209,7 +209,6 @@ nav a.active {
       border-collapse: collapse;
       border-radius: 12px;
       overflow: hidden;
-      background: var(--white);
       background:  #ffffff;
       table-layout: fixed;
      
