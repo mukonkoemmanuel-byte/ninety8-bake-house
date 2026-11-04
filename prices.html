@@ -6,6 +6,7 @@
   <title>Prices | Ninety8 Bake House Bakery</title>
   <meta name="description" content="Prices for cakes, cupcakes, cookies and party packages.">
   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -26,6 +27,7 @@
       <!-- A <table> is for data that has rows and columns, like a price list.
            <thead> = the heading row.  <tbody> = the data rows.
            <tr> = table row.  <th> = heading cell.  <td> = normal cell. -->
+           
       <table class="price-table" >
         <thead>
           <tr>
@@ -34,41 +36,83 @@
             <th>Price</th>
           </tr>
         </thead>
+        
         <tbody>
           <tr>
-            <td>VANILLA</td>
-            <td>6 inch, serves 8 to 12</td>
+            <td rowspan="4" class="flavor"><img src="images/vanilla.jpg" alt="vanilla">VANILLA</td>
+            <td>6 inch</td>
             <td>K500</td>
           </tr>
+          <tr>  
+            <td>8 inches</td>
+            <td>K850</td>
+          </tr>
+           <tr>  
+            <td>10 inches</td>
+            <td>K1130</td>
+          </tr> 
+          <tr>  
+            <td>12 inches</td>
+            <td>K1350</td>
+          </tr>
+          
            <tr>
-            <td>COCONUT</td>
-            <td>6 inch, serves 8 to 12</td>
-            <td>K550</td>
+            <td rowspan="4"  class="flavor"><img src="images/Coconut.jpg" alt="coconut">LEMON POPPY SEED/ COCONUT</td>
+            <td>6 inch</td>
+            <td>K500</td>
           </tr>
-          <tr>
-            <td>LEMON POPPY SEED</td>
-            <td>6 inch, serves 8 to 12</td>
-            <td>K550</td>
+          <tr>  
+            <td>8 inches</td>
+            <td>K850</td>
+          </tr>
+           <tr>  
+            <td>10 inches</td>
+            <td>K1130</td>
+          </tr> 
+          <tr>  
+            <td>12 inches</td>
+            <td>K1350</td>
+          </tr>
+          
+           <tr>
+            <td rowspan="4"  class="flavor"> <img src="images/chocolate.jpg" alt="chocolate">CHOCOLATE/ RED VELVET</td>
+            <td>6 inch</td>
+            <td>K500</td>
+          </tr>
+          <tr>  
+            <td>8 inches</td>
+            <td>K850</td>
+          </tr>
+           <tr>  
+            <td>10 inches</td>
+            <td>K1130</td>
+          </tr> 
+          <tr>  
+            <td>12 inches</td>
+            <td>K1350</td>
           </tr>
            <tr>
-            <td>RED VELVET</td>
-            <td>6 inch, serves 8 to 12</td>
-            <td>K600</td>
-          </tr>
-          <tr>
-            <td>CHOCOLATE</td>
-            <td>6 inch, serves 8 to 12</td>
-            <td>K600</td>
-
-          </tr>
-          <tr>
-            <td>CUPCAKES</td>
-            <td>6 pcs, serves to 12 </td>
+            <td rowspan="2"  class="flavor"><img src="images/cupcakes2.jpg" alt="cupcakes"> CUPCAKES</td>
+            <td>6 Cupcakes</td>
             <td>K180</td>
           </tr>
-        </tbody>
+            <td>12 Cupcakes</td>
+            <td>K360</td>
+          </tr>
+          </tbody>
       </table>
     </section>
+       
+    
+    <div class="note">
+          <h3 class="note-title">Note</h3>
+           <ol>
+              <li>Above are starting prices for 2 layers for single flavours.</li>
+              <li>Chocolate and Red Velvet cupcakes attract an additional K100.</li>
+              <li>Please note that 98cakes are custom orders and priced individually. The final price depends on several factors including design, frosting, style, complexity, decorations, packaging, additional custom details and special requests. As such, prices may vary from one order to another.</li>
+           </ol>
+          <p class="note-footer">A final quotation will be provided once all order details have been confirmed. Any changes to the order after the quotation has been issued may result in a price adjustment.</p>
+     </div>
 
     <section  class="section">
       <h2>Packages</h2>
@@ -99,8 +143,45 @@
     </section>
   </main>
 <footer class="site-footer">
-   <p>&copy; <span id="year">2026</span> Ninety8 Bake House Bakery</p>
-    <p>WhatsApp: <a href="https://wa.me/260964182847">+260 97 748 7881</a></p>
+           <section>
+      <!--social media links-->
+      <div class="social-links" >
+        <a href="https://instagram.com/98bake_house"
+           target="_blank"
+           aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+         <a href="https://www.facebook.com/share/1FQyY4DqXN/"
+                target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+        <a href="https://tiktok.com/@98_bakehouse"
+           target="_blank"
+           aria-label="tiktok">
+          <i class="fa-brands fa-tiktok"></i>
+           </a>
+          <a href="https://wa.me/260964182847"
+           target="_blank"
+           aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+      </div>
+     </section>
+          <p>
+        <i class="fa-solid fa-phone"></i>
+        097 748 7881
+       </p>
+
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Chingola, Zambia
+      </p>
+     
+     <p>&copy; <span id="year">2026</span> Ninety8 Bake House Bakery. All rights reserved.</p>
+   
 </footer>
 
 </body>
