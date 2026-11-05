@@ -287,40 +287,41 @@ td.flavor {
 
 .social-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-wrap: nowrap;
+    gap: clamp(8px, 3vw, 20px) ;
     align-items: center;
     justify-content: center ;
 }
 
 .social-links a {
-    width: 80px;
-    height: 60px;
-    flex: 0 0 60px;
+  width: clamp(36px, 11vw, 56px);
+  height: clamp(36px, 11vw, 56px);
+  flex: 0 1 auto;
 
-    border: 2px solid var(--brown);
-    border-radius: 50%;
+  border: 2px solid var(--brown);
+  border-radius: 50%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    color: var(--brown);
-    background: transparent;
-
-    font-size: 27px;
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-    margin-left: 10px;
+  color: var(--brown);
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
 }
 
-/* Hover effect */
 .social-links a:hover {
-    background: var(--pink);
-    border-color: var(--pink);
-    color: var(--white);
-    transform: translateY(-4px);
+  background: var(--pink);
+  border-color: var(--pink);
+  color: var(--white);
+  transform: translateY(-4px);
+}
+
+.social-links i {
+  font-size: clamp(16px, 5vw, 24px);
 }
 
 .note {
