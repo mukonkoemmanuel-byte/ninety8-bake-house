@@ -141,6 +141,39 @@
       </article>
       </div>
     </section>
+
+      <section class="section" id="order">
+      <h2>Build your order</h2>
+      <p>Pick what you want, see the total, then send the order to us on WhatsApp.</p>
+
+      <!-- id="order-form" is how script.js finds this form. -->
+      <form id="order-form" class="order-form">
+        <!-- for="item" connects the label to the select with id="item".
+             Click the label text: the dropdown gets focus. Good for accessibility. -->
+        <label for="item">Item</label>
+        <!-- value = the price (for the maths). data-name = the clean name (for the message).
+             data-anything is how you attach your own extra information to a tag. -->
+        <select id="item">
+          <option value="350" data-name="Small celebration cake">Small celebration cake (K350)</option>
+          <option value="550" data-name="Large celebration cake">Large celebration cake (K550)</option>
+          <option value="150" data-name="Cupcakes, box of 6">Cupcakes, box of 6 (K150)</option>
+          <option value="280" data-name="Cupcakes, box of 12">Cupcakes, box of 12 (K280)</option>
+          <option value="120" data-name="Cookies, dozen">Cookies, dozen (K120)</option>
+        </select>
+
+        <label for="quantity">How many?</label>
+        <input type="number" id="quantity" value="1" min="1" max="20">
+
+        <button type="submit" class="button">Add to order</button>
+      </form>
+
+      <!-- Empty for now. JavaScript fills these in. -->
+      <ul id="order-list" class="order-list"></ul>
+      <p class="order-total">Total: K<span id="order-total">0</span></p>
+      <!-- "hidden" = not shown until JavaScript removes it. -->
+      <a id="whatsapp-order" class="button" href="#" hidden>Send this order on WhatsApp</a>
+    </section>
+
   </main>
 <footer class="site-footer">
            <section>
@@ -185,4 +218,5 @@
 </footer>
 
 </body>
+<script src="js/script.js"></script>
 </html>

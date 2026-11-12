@@ -359,3 +359,22 @@ td.flavor {
   border-top: 1px solid var(--line);
   text-align: center;
 }
+
+.order-form {
+     display: grid;
+     gap: 8px;
+     max-width: 420px;
+   }
+
+   .order-form select,
+   .order-form input {
+     padding: 10px;
+     font: inherit;
+     border: 1px solid var(--line);
+     border-radius: 8px;
+   }
+
+   .order-total {
+     font-size: 1.25rem;
+     font-weight: bold;
+   }
