@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prices | Ninety8 Bake House Bakery</title>
-  <meta name="description" content="Prices for cakes, cupcakes, cookies and party packages.">
+  <meta name="description" content="Prices for cakes, cupcakes, Scones and party packages.">
   <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -17,17 +17,29 @@
       <a href="prices.html" class="active" >Prices</a>
       <a href="terms.html">Terms</a>
     </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">
+    <i class="fa-solid fa-moon"></i>
+</button>
   </header>
 
   <main>
     <section class="hero">
       <h1>Prices</h1>
-      <p>All prices are in Zambian Kwacha (K). Custom designs are quoted on WhatsApp.</p>
+      <h3>All prices are in Zambian Kwacha (K). Custom designs are quoted on WhatsApp.</h3>
+      <div class="price-notice">
+  <i class="fa-solid fa-circle-info"></i>
+  <p>
+    Cake prices are starting prices for two-layer, single-flavour cakes.
+    Custom designs are quoted individually.
+  </p>
+</div>
 
       <!-- A <table> is for data that has rows and columns, like a price list.
            <thead> = the heading row.  <tbody> = the data rows.
            <tr> = table row.  <th> = heading cell.  <td> = normal cell. -->
-           
+          <h2>CAKES MENU</h2>
+            
       <table class="price-table" >
         <thead>
           <tr>
@@ -59,47 +71,87 @@
            <tr>
             <td rowspan="4"  class="flavor"><img src="images/Coconut.jpg" alt="coconut">LEMON POPPY SEED/ COCONUT</td>
             <td>6 inch</td>
-            <td>K500</td>
+            <td>K520</td>
           </tr>
           <tr>  
             <td>8 inches</td>
-            <td>K850</td>
+            <td>K870</td>
           </tr>
            <tr>  
             <td>10 inches</td>
-            <td>K1130</td>
+            <td>K1150</td>
           </tr> 
           <tr>  
             <td>12 inches</td>
-            <td>K1350</td>
+            <td>K1370</td>
           </tr>
           
            <tr>
             <td rowspan="4"  class="flavor"> <img src="images/Chocolate.jpg" alt="chocolate">CHOCOLATE/ RED VELVET</td>
             <td>6 inch</td>
-            <td>K500</td>
+            <td>K600</td>
           </tr>
           <tr>  
             <td>8 inches</td>
-            <td>K850</td>
+            <td>K950</td>
           </tr>
            <tr>  
             <td>10 inches</td>
-            <td>K1130</td>
+            <td>K1230</td>
           </tr> 
           <tr>  
             <td>12 inches</td>
-            <td>K1350</td>
+            <td>K1450</td>
           </tr>
            <tr>
             <td rowspan="2"  class="flavor"><img src="images/cupcakes2.jpg" alt="cupcakes"> CUPCAKES</td>
             <td>6 Cupcakes</td>
             <td>K180</td>
           </tr>
+          <tr>
             <td>12 Cupcakes</td>
             <td>K360</td>
           </tr>
           </tbody>
+      </table>
+      <h2>PASTRIES MENU</h2>
+
+      <table class="price-table">
+        <thead>
+           <tr>
+            <th>Item</th>
+            <th>Size</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="flavor"><img src="images/pie 2.jpg" alt="Pies"> PIES</td>
+            <td>10 Pies</td>
+            <td>K300</td>
+          </tr>
+             <tr>
+            <td class="flavor"><img src="images/scones.jpg" alt="Scones"> SCONES</td>
+            <td>10 Scones</td>
+            <td>K125</td>
+          </tr>
+             <tr>
+            <td class="flavor"><img src="images/samosas 2.jpg" alt="Samosas"> SAMOSAS</td>
+            <td>10 Samosas</td>
+            <td>K100</td>
+          </tr>
+             <tr>
+            <td class="flavor"><img src="images/sausage rolls.jpg" alt="Sausage Rolls"> SAUSAGE ROLLS</td>
+            <td>10 Sausage Rolls</td>
+            <td>K200</td>
+          </tr>
+            <tr>
+            <td class="flavor"><img src="images/fritters.jpg" alt="Fritters"> FRITTERS</td>
+            <td>10 Fritters</td>
+            <td>K60</td>
+          </tr>
+        </tbody>
       </table>
     </section>
        
@@ -114,59 +166,48 @@
           <p class="note-footer">A final quotation will be provided once all order details have been confirmed. Any changes to the order after the quotation has been issued may result in a price adjustment.</p>
      </div>
 
-    <section  class="section">
-      <h2>Packages</h2>
-      
-      <div class="cards"> 
-      
-        <article class="card package" >
-        <h3>Birthday Bundle</h3>
-        <p   class="price">K800</p>
-        <!-- <ul> = a bulleted list ("unordered"). Each bullet is an <li> (list item). -->
-        <ul>
-          <li>Small celebration cake</li>
-          <li>12 cupcakes</li>
-          <li>Your message on the cake</li>
-        </ul>
-      </article>
-      <article class="card package featured">
-        <h3>Party pack</h3>
-        <p   class="price"> K1,250</p>
-        <ul>
-          <li>large celebration cake</li>
-          <li>24 cupcakes</li>
-          <li>2 dozen cookies</li>
-          <li>free delivery in Chingola</li>
-        </ul>
-      </article>
-      </div>
-    </section>
-
       <section class="section" id="order">
       <h2>Build your order</h2>
       <p>Pick what you want, see the total, then send the order to us on WhatsApp.</p>
 
       <!-- id="order-form" is how script.js finds this form. -->
-      <form id="order-form" class="order-form">
-        <!-- for="item" connects the label to the select with id="item".
-             Click the label text: the dropdown gets focus. Good for accessibility. -->
-        <label for="item">Item</label>
-        <!-- value = the price (for the maths). data-name = the clean name (for the message).
-             data-anything is how you attach your own extra information to a tag. -->
-        <select id="item">
-          <option value="350" data-name="Small celebration cake">Small celebration cake (K350)</option>
-          <option value="550" data-name="Large celebration cake">Large celebration cake (K550)</option>
-          <option value="150" data-name="Cupcakes, box of 6">Cupcakes, box of 6 (K150)</option>
-          <option value="280" data-name="Cupcakes, box of 12">Cupcakes, box of 12 (K280)</option>
-          <option value="120" data-name="Cookies, dozen">Cookies, dozen (K120)</option>
-        </select>
+     <form id="order-form" class="order-form">
 
-        <label for="quantity">How many?</label>
-        <input type="number" id="quantity" value="1" min="1" max="20">
+  <label for="item">Item</label>
+  <select id="item" required>
+    <option value="" selected disabled>Select an item</option>
+    <option value="vanilla">Vanilla cake</option>
+    <option value="lemon">Lemon Poppy Seed cake</option>
+    <option value="coconut">Coconut cake</option>
+    <option value="chocolate">Chocolate cake</option>
+    <option value="red-velvet">Red Velvet cake</option>
 
-        <button type="submit" class="button">Add to order</button>
-      </form>
+    <option value="cupcakes-6">Cupcakes — box of 6</option>
+    <option value="cupcakes-12">Cupcakes — box of 12</option>
 
+    <option value="pies">Pies — 10 pieces</option>
+    <option value="scones">Scones — 10 pieces</option>
+    <option value="samosas">Samosas — 10 pieces</option>
+    <option value="sausage-rolls">Sausage Rolls — 10 pieces</option>
+    <option value="fritters">Fritters — 10 pieces</option>
+  </select>
+
+  <div id="cake-size-container" hidden>
+    <label for="cake-size">Choose cake size</label>
+    <select id="cake-size">
+      <option value="6">6 inches</option>
+      <option value="8">8 inches</option>
+      <option value="10">10 inches</option>
+      <option value="12">12 inches</option>
+    </select>
+  </div>
+
+  <label for="quantity">How many?</label>
+  <input type="number" id="quantity" value="1" min="1" max="20" required>
+
+  <button type="submit" class="button">Add to order</button>
+
+</form>
       <!-- Empty for now. JavaScript fills these in. -->
       <ul id="order-list" class="order-list"></ul>
       <p class="order-total">Total: K<span id="order-total">0</span></p>
@@ -216,7 +257,7 @@
      <p>&copy; <span id="year">2026</span> Ninety8 Bake House Bakery. All rights reserved.</p>
    
 </footer>
-
+<script src="script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
 </html>

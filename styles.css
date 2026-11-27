@@ -378,3 +378,164 @@ td.flavor {
      font-size: 1.25rem;
      font-weight: bold;
    }
+
+   [hidden] {
+  display: none !important;
+}
+
+.price-table {
+    margin-bottom: 70px;
+}
+
+/* Pricing notice */
+.price-notice {
+    max-width: 850px;
+    margin: 25px auto 35px;
+    padding: 16px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    background: #fff8f0;
+    border: 1px solid var(--pink);
+    border-left: 5px solid var(--pink);
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(74, 44, 42, 0.06);
+}
+
+.price-notice i {
+    color: var(--pink-dark);
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.price-notice p {
+    margin: 0;
+    color: var(--brown);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .price-notice {
+        margin: 20px 5px 30px;
+        padding: 13px;
+        gap: 10px;
+    }
+
+    .price-notice p {
+        font-size: 13px;
+    }
+}
+
+/* Smaller images on mobile screens */
+@media (max-width: 600px) {
+    .price-table img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+
+/* ==================================================
+   DARK / LIGHT MODE
+================================================== */
+
+/* Navigation alignment */
+.site-header nav {
+    margin-left: auto;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--brown);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 17px;
+    flex-shrink: 0;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--pink);
+    color: var(--white);
+}
+
+/* Dark mode colour palette */
+body.dark-mode {
+    --cream: #211c1b;
+    --brown: #f8eee5;
+    --pink: #d87985;
+    --pink-dark: #f08b96;
+    --pink-light: #a95865;
+    --blush: #302625;
+    --line: #493936;
+    --white: #2c2524;
+}
+
+/* Hero section */
+body.dark-mode .hero {
+    background: linear-gradient(
+        180deg,
+        #382827,
+        var(--cream)
+    );
+}
+
+/* Price table */
+body.dark-mode .price-table {
+    background: var(--white);
+}
+
+body.dark-mode .price-table tr:nth-child(even) td {
+    background: var(--blush);
+}
+
+/* Notes and notices */
+body.dark-mode .note {
+    background: var(--white);
+}
+
+body.dark-mode .price-notice {
+    background: var(--white);
+}
+
+/* Smooth transitions */
+body,
+.site-header,
+.site-footer,
+.card,
+.hero,
+.section,
+.price-table,
+.note,
+.price-notice {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.remove-button {
+    margin-left: 16px;
+    padding: 6px 12px;
+    background-color: #f8d7da;
+    color: #a61b29;
+    border: 1px solid #f1aeb5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}

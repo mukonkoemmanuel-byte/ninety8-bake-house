@@ -13,7 +13,7 @@
   <!-- The text on the browser tab, and the blue link text on Google. -->
   <title>Ninety8 Bake House Bakery | Cakes and treats in Chingola</title>
   <!-- The grey text under the link on Google. -->
-  <meta name="description" content="Birthday cakes, cupcakes and cookies, baked by hand in Chingola.">
+  <meta name="description" content="Birthday cakes, cupcakes and Scones, baked by hand in Chingola.">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -30,6 +30,11 @@
       <a href="prices.html">Prices</a>
       <a href="terms.html">Terms</a>
     </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">
+    <i class="fa-solid fa-moon"></i>
+</button>
+    
   </header>
 
   <!-- <main> = the content that is unique to THIS page. Only one per page. -->
@@ -38,9 +43,9 @@
     <!-- <section> = a chunk of the page about one topic. -->
     <section class="hero">
       <!-- <h1> = the main heading. ONE per page. Google reads it to know what the page is about. -->
-      <h1>Cakes baked fresh, for the days that matter</h1>
+      <h1>Freshly baked treats for every occasion.</h1>
       <!-- <p> = a paragraph. -->
-      <p>Birthday cakes, cupcakes and cookies, made by hand in Chingola.</p>
+      <p>From celebration cakes and cupcakes to pies, samosas and sausage rolls, freshly made by hand in Chingola.</p>
       <!-- <a> = a link. href = where it goes. -->
       <a href="prices.html" class="button">See our prices</a>
     </section>
@@ -67,18 +72,47 @@
         </article>
 
         <article class="card">
-          <img src="images/cookies.jpg" alt="A plate of golden chocolate chip cookies">
-          <h3>Cookies</h3>
+          <img src="images/scones.jpg" alt="A plate of golden chocolate chip Scones">
+          <h3>Scones</h3>
           <p>Soft in the middle, crisp on the edges. Sold by the dozen.</p>
         </article>
+
+         <article class="card">
+          <!-- <img> has no closing tag. src = the file. alt = what the picture shows,
+               read aloud to blind visitors and shown if the image fails to load. Never leave it empty. -->
+          <img src="images/pie.jpg" alt="A box of Golden homemade meat pies with flaky pastry and savoury filling">
+          <h3>Pies</h3>
+          <p>Golden pastry filled with a delicious savoury filling. Great for lunch, picnics and satisfying snacks.</p>
+        </article>
+        
+         <article class="card">
+          <!-- <img> has no closing tag. src = the file. alt = what the picture shows,
+               read aloud to blind visitors and shown if the image fails to load. Never leave it empty. -->
+          <img src="images/samosas.jpg" alt="Freshly fried golden samosas with a crispy pastry shell">
+          <h3>Samosas</h3>
+          <p>Crispy pastry pockets filled with a delicious savoury filling. Perfect for snacks, gatherings and sharing.</p>
+        </article>
+        
+         <article class="card">
+          <!-- <img> has no closing tag. src = the file. alt = what the picture shows,
+               read aloud to blind visitors and shown if the image fails to load. Never leave it empty. -->
+          <img src="images/sausage rolls.jpg" alt="Golden homemade sausage rolls with a savoury filling, freshly baked and served on a plate">
+          <h3>Sausage Rolls</h3>
+          <p>Flaky golden pastry wrapped around a tasty sausage filling. Perfect for quick bites and light snacks.</p>
+        </article>
+
+
       </div>
     </section>
 
     <section class="section">
       <h2>About us</h2>
       <p>
-        Ninety8 Bake House started in a home kitchen with one oven and a lot of birthday requests.
-        Everything is baked to order, so your cake is made for you, not pulled off a shelf.
+        Ninety8 Bake House started in a home kitchen with one oven and a passion for baking. What began with birthday cake requests has grown into a home bakery offering a variety of sweet and savoury treats.
+
+        From custom-made celebration cakes to freshly prepared pastries, including pies, samosas and sausage rolls, everything is made with care and prepared to order.
+
+       We're still a home bakery, bringing homemade goodness to every occasion.
       </p>
     </section>
 
@@ -131,7 +165,7 @@
     <!-- wa.me links open a WhatsApp chat with that number. Number = country code, no + and no spaces. -->
    
   </footer>
-
+<script src="script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
 </html>
